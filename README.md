@@ -8,6 +8,11 @@
 ```bash
   sudo ./host_run_flash.sh recomputer-orin-j401
 ```
+完成一次刷机后，不修改源码情况下，以后刷机可不用编译，减少刷机时间：
+```bash
+  sudo ./host_run_flash.sh recomputer-orin-j401 -no_build
+```
+
 清理刷机后的工作目录：
 ```bash
   sudo ./host_run_flash.sh recomputer-orin-j401 --rm
