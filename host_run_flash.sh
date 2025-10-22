@@ -164,11 +164,20 @@ sudo apt-get install -y \
   sshpass abootimg nfs-kernel-server \
   libxml2-utils qemu-user-static
 
-# （可选）apply_binaries（仅当 APPLY_BINARIES=1 时执行）
+# Step 1.1: run apply_binaries.sh (non-fatal)
 if [[ "$APPLY_BINARIES" == "1" ]]; then
   if [[ -x "$L4T_DIR/apply_binaries.sh" ]]; then
     echo "[host] Step 1.1: run apply_binaries.sh (APPLY_BINARIES=1) ..."
-    ( cd "$L4T_DIR" && sudo ./apply_binaries.sh )
+    (
+      set +e
+      cd "$L4T_DIR"
+      sudo ./apply_binaries.sh
+      rc=$?
+      set -e
+      if [[ $rc -ne 0 ]]; then
+        echo "WARNING: apply_binaries.sh exited with code $rc; continuing."
+      fi
+    )
   else
     echo "WARNING: $L4T_DIR/apply_binaries.sh not found; skip."
   fi
