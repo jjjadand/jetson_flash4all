@@ -1,3 +1,9 @@
+# Description:
+  Wrapper for Jetson Linux initrd flashing with optional build, user preseed,
+  and post-flash cleanup. Flags can appear in any order.  
+  可以给recomputer/reserver任意型号以及官方套件刷机，支持修改源码。刷机过程可启用格式化、配置用户名。  
+  你的工作空间保证至少要用80g的free space。刷机后可启用`--rm`参数清理工作目录。 
+
 
 工程目录下载地址：
 https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ET0bfCT_QsxDrmwmmnv8dBgBsysJ1vUpU_upgS7mxnJdeA?e=PLr0ab
@@ -46,9 +52,7 @@ Valid BOARD_NAME values: （可以刷的设备参数， 第一个参数）
   - jetson-orin-nano-devkit
   - jetson-agx-orin-devkit
 
-# Description:
-  Wrapper for Jetson Linux initrd flashing with optional build, user preseed,
-  and post-flash cleanup. Flags can appear in any order.  
+
 
 # Flags:
   -h, --help            Show this help and exit  
