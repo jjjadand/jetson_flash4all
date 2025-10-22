@@ -33,15 +33,15 @@ Valid BOARD_NAME values: （可以刷的设备参数， 第一个参数）
 
 # Description:
   Wrapper for Jetson Linux initrd flashing with optional build, user preseed,
-  and post-flash cleanup. Flags can appear in any order.
+  and post-flash cleanup. Flags can appear in any order.  
 
 # Flags:
-  -h, --help            Show this help and exit
-  -no_build, --no_build Skip kernel/modules build & install (dont use the args at first time，第一次刷机不要启用该参数)
-  -rm, --rm             Cleanup after flashing (preserve Linux_for_Tegra/tools/kernel_flash/initrdlog)
-  -set_user, --set_user Preseed OEM user via tools/l4t_create_default_user.sh
-  --erase-all           Erase target storage before flashing
-  --erase_all           Same as --erase-all
+  -h, --help            Show this help and exit  
+  -no_build, --no_build Skip kernel/modules build & install (dont use the args at first time，第一次刷机不要启用该参数)  
+  -rm, --rm             Cleanup after flashing (preserve Linux_for_Tegra/tools/kernel_flash/initrdlog)  
+  -set_user, --set_user Preseed OEM user via tools/l4t_create_default_user.sh  
+  --erase-all           Erase target storage before flashing  
+  --erase_all           Same as --erase-all  
 
 # Environment overrides:
   EXTERNAL_DEVICE   (default: nvme0n1p1)
