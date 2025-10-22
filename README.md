@@ -1,4 +1,6 @@
 # Usage:
+脚本放在与`Linux_for_Tegra`文件夹同一级的目录。
+
 ```bash
   sudo ./host_run_flash.sh [BOARD_NAME] [flags]
 ```
