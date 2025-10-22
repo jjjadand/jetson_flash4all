@@ -1,7 +1,7 @@
 # Description:
   Wrapper for Jetson Linux initrd flashing with optional build, user preseed,
   and post-flash cleanup. Flags can appear in any order.  
-  可以给`recomputer / reserver`任意型号以及官方套件刷机，支持修改源码。刷机过程可启用格式化、配置用户名。  
+  可以给**recomputer / reserver**任意型号以及官方套件刷机，支持修改源码。刷机过程可启用格式化、配置用户名。  
   你的工作空间保证至少要用80g的free space。刷机后可启用`--rm`参数清理工作目录。 
 
 
