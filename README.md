@@ -1,3 +1,13 @@
+
+工程目录下载地址：
+https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ET0bfCT_QsxDrmwmmnv8dBgBsysJ1vUpU_upgS7mxnJdeA?e=PLr0ab
+
+解压：
+```bash
+sudo tar -xpf L4T_36.4.3_plus.tar.gz
+```
+解压后得到：源码工程`Linux_for_Tegra` ，交叉编译工具链`aarch64--glibc--stable-2022.08-1`
+
 # Usage:
 脚本放在与`Linux_for_Tegra`文件夹同一级的目录。
 
@@ -45,7 +55,7 @@ Valid BOARD_NAME values: （可以刷的设备参数， 第一个参数）
   -no_build, --no_build Skip kernel/modules build & install (dont use the args at first time，第一次刷机不要启用该参数)  
   -rm, --rm             Cleanup after flashing (preserve Linux_for_Tegra/tools/kernel_flash/initrdlog)  
   -set_user, --set_user Preseed OEM user via tools/l4t_create_default_user.sh  
-  --erase-all           Erase target storage before flashing  
+  --erase-all           Erase target storage before flashing  (刷机时彻底格式化，可用于解决固态的分区问题）
   --erase_all           Same as --erase-all  
 
 # Environment overrides:
