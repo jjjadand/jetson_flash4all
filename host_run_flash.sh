@@ -12,6 +12,7 @@ VALID_BOARDS=(
   recomputer-orin-robotics-j401
   recomputer-orin-robotics-j401-gmsl
   recomputer-orin-super-j401
+  jetson-orin-nano-devkit
 )
 
 # ===== 使用说明（echo 全英文）=====
