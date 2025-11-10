@@ -5,8 +5,8 @@
   你的工作空间保证至少要用80g的free space。刷机后可启用`--rm`参数清理工作目录。 
 
 
-工程目录下载地址：
-https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ET0bfCT_QsxDrmwmmnv8dBgBsysJ1vUpU_upgS7mxnJdeA?e=PLr0ab
+工程目录下载地址：  
+Jetpack 6.2：https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ET0bfCT_QsxDrmwmmnv8dBgBsysJ1vUpU_upgS7mxnJdeA?e=PLr0ab
 
 解压：
 ```bash
